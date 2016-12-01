@@ -6,13 +6,16 @@
 ## 安装步骤
 
 > [yarn 安装](https://yarnpkg.com/en/docs/install)
+
 ``` bash
 # install dependencies
 yarn install
-
+```
+```
 # serve with hot reload at localhost:8080
 yarn run dev
-
+```
+```
 # build for production with minification
 yarn run build
 ```
