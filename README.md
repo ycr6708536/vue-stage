@@ -18,9 +18,9 @@ yarn run build
 ```
 
 ## 相关资料网站
-+ [Vue.js](https://cn.vuejs.org/)
-+ [Vue-router](http://router.vuejs.org/zh-cn/)
-+ [Vuex](http://vuex.vuejs.org/zh-cn/)
-+ [element](http://element.eleme.io/#/zh-CN)
-+ [sass](http://sass.bootcss.com/docs/sass-reference/)
-+ [jade](https://segmentfault.com/a/1190000000357534)
+- [Vue.js](https://cn.vuejs.org/)
+- [Vue-router](http://router.vuejs.org/zh-cn/)
+- [Vuex](http://vuex.vuejs.org/zh-cn/)
+- [element](http://element.eleme.io/#/zh-CN)
+- [sass](http://sass.bootcss.com/docs/sass-reference/)
+- [jade](https://segmentfault.com/a/1190000000357534)
