@@ -1,0 +1,30 @@
+div
+  router-link.btn.btn-primary(v-if="$route.path !== '/time-entries/log-time'", to='/time-entries/log-time')
+    | 创建
+  div(v-if="$route.path === '/time-entries/log-time'")
+    h3 创建
+  hr
+  router-view
+  .time-entries
+    p(v-if='!plans.length')
+      strong 还没有任何计划
+    .list-group
+      a.list-group-item(v-for='(plan,index) in plans')
+        .row
+          .col-sm-2.user-details
+            img.avatar.img-circle.img-responsive(:src='plan.avatar')
+            p.text-center
+              strong
+                | {{ plan.name }}
+          .col-sm-2.text-center.time-block
+            h3.list-group-item-text.total-time
+              i.glyphicon.glyphicon-time
+              |                 {{ plan.totalTime }}
+            p.label.label-primary.text-center
+              i.glyphicon.glyphicon-calendar
+              |                 {{ plan.date }}
+          .col-sm-7.comment-section
+            p {{ plan.comment }}
+          .col-sm-1
+            button.btn.btn-xs.btn-danger.delete-button(@click='deletePlan(index)')
+              | X

@@ -1,0 +1,15 @@
+.form-horizontal
+  .form-group
+    .col-sm-6
+      label 日期
+      input.form-control(type='date', v-model='date', placeholder='Date')
+    .col-sm-6
+      label 时间
+      input.form-control(type='number', v-model='totalTime', placeholder='Hours')
+  .form-group
+    .col-sm-12
+      label 备注
+      input.form-control(type='text', v-model='comment', placeholder='Comment')
+  button.btn.btn-primary(@click='save()') 保存
+  router-link.btn.btn-danger(to='/time-entries') 取消
+  hr
