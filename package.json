@@ -10,7 +10,6 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
     "element-ui": "^1.0.3",
     "vue": "^2.1.0",
     "vue-resource": "^1.0.3",
