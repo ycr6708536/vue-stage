@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import VueWebp from 'vue-webp';
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import VueRouter from 'vue-router';
@@ -14,6 +15,7 @@ import store from './store'
 Vue.use(ElementUI)
 Vue.use(VueRouter)
 Vue.use(VueResource)
+Vue.use(VueWebp)
 
 const routes = [{
   path: '/',

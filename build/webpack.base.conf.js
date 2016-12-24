@@ -1,4 +1,5 @@
 var path = require('path')
+var multi = require("multi-loader")
 var config = require('../config')
 var utils = require('./utils')
 var projectRoot = path.resolve(__dirname, '../')
@@ -62,12 +63,17 @@ module.exports = {
         loader: 'json'
       },
       {
-        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        loader: 'url',
-        query: {
-          limit: 10000,
-          name: utils.assetsPath('img/[name].[hash:7].[ext]')
-        }
+        test: /\.(png|jpe?g|gif|svg|webp)(\?.*)?$/,
+        loader: multi(
+          'file?' + JSON.stringify({
+            limit: 10000,
+            name: utils.assetsPath('img/[name].[hash:7].webp')
+          }) + '!webpn',
+          'url?' + JSON.stringify({
+            limit: 10000,
+            name: utils.assetsPath('img/[name].[hash:7].[ext]')
+          })
+        )
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,

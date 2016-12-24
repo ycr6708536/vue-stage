@@ -11,10 +11,13 @@
   },
   "dependencies": {
     "element-ui": "^1.0.3",
+    "multi-loader": "^0.1.0",
     "vue": "^2.1.0",
     "vue-resource": "^1.0.3",
     "vue-router": "^2.1.0",
-    "vuex": "^2.0.0"
+    "vue-webp": "^1.0.0",
+    "vuex": "^2.0.0",
+    "webpn-loader": "^0.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
