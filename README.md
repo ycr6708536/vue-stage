@@ -6,6 +6,8 @@
 ## 安装步骤
 
 > [yarn 安装](https://yarnpkg.com/en/docs/install)
+
+
 ``` bash
 # install dependencies
 yarn install
@@ -18,7 +20,7 @@ yarn run build
 ```
 
 ## 添加webp支持
-+ 修改webpack配置
+修改webpack配置
   `webpack.base.conf.js`
   ```js
   var multi = require("multi-loader")
